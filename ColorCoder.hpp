@@ -6,10 +6,10 @@ namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
     enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
-    const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
-    const int numberOfMajorColors = std::size(MajorColorNames);
-    const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    const int numberOfMinorColors = std::size(MinorColorNames);
+    extern const char* MajorColorNames[];
+    extern const int numberOfMajorColors;
+    extern const char* MinorColorNames[];
+    extern const int numberOfMinorColors;
 
     class ColorPair {
     private:
