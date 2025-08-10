@@ -5,14 +5,24 @@
 
 namespace TelCoColorCoder
 {
-    ColorPair GetColorFromPairNumber(int pairNumber) {
-        int zeroBasedPairNumber = pairNumber - 1;
-        MajorColor majorColor = static_cast<MajorColor>(zeroBasedPairNumber / numberOfMinorColors);
-        MinorColor minorColor = static_cast<MinorColor>(zeroBasedPairNumber % numberOfMinorColors);
-        return ColorPair(majorColor, minorColor);
+    const char* MajorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    const int numberOfMajorColors = std::size(MajorColorNames);
+
+    const char* MinorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    const int numberOfMinorColors = std::size(MinorColorNames);
+
+    ColorPair::ColorPair(MajorColor major, MinorColor minor)
+        : majorColor(major), minorColor(minor) {}
+
+    MajorColor ColorPair::getMajor() const {
+        return majorColor;
     }
 
-    int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
-        return major * numberOfMinorColors + minor + 1;
+    MinorColor ColorPair::getMinor() const {
+        return minorColor;
+    }
+
+    std::string ColorPair::ToString() const {
+        return std::string(MajorColorNames[majorColor]) + " " + MinorColorNames[minorColor];
     }
 }
