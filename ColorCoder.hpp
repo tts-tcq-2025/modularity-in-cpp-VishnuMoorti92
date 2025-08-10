@@ -16,18 +16,14 @@ namespace TelCoColorCoder
         MajorColor majorColor;
         MinorColor minorColor;
     public:
-        ColorPair(MajorColor major, MinorColor minor)
-            : majorColor(major), minorColor(minor) {}
-        MajorColor getMajor() const {
-            return majorColor;
-        }
-        MinorColor getMinor() const {
-            return minorColor;
-        }
-        std::string ToString() const {
-            return std::string(MajorColorNames[majorColor]) + " " + MinorColorNames[minorColor];
-        }
+        ColorPair(MajorColor major, MinorColor minor);
+        MajorColor getMajor() const;
+        MinorColor getMinor() const;
+        std::string ToString() const;
     };
+
+    ColorPair GetColorFromPairNumber(int pairNumber);
+    int GetPairNumberFromColor(MajorColor major, MinorColor minor);
 
     ColorPair GetColorFromPairNumber(int pairNumber);
     int GetPairNumberFromColor(MajorColor major, MinorColor minor);
