@@ -28,7 +28,7 @@ namespace TelCoColorCoder
             return std::string(MajorColorNames[majorColor]) + " " + MinorColorNames[minorColor];
         }
     };
-}
 
-ColorPair GetColorFromPairNumber(int pairNumber);
-int GetPairNumberFromColor(MajorColor major, MinorColor minor);
+    ColorPair GetColorFromPairNumber(int pairNumber);
+    int GetPairNumberFromColor(MajorColor major, MinorColor minor);
+}
