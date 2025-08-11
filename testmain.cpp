@@ -10,6 +10,7 @@ int main() {
     auto printFunction = &messages {
         messages.push_back(msg);
     };
+
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
@@ -17,8 +18,6 @@ int main() {
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
     TelCoColorCoder::PrintColorCodeManual(printFunction);
-    }
-
     return 0;
 }
 
