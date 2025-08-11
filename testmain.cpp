@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-#include <cassert>
-#include "GetColorPairNumber.hpp"
 #include "testmain.hpp"
 
 int main() {
