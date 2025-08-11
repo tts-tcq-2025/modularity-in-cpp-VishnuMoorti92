@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include "GetColorPairNumber.hpp"
+#include "testmain.hpp"
 
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
