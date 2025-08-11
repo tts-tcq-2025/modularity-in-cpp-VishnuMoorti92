@@ -1,4 +1,4 @@
-#include "ColorCoder.hpp"
+#include "ColorPairCoder.hpp"
 
 namespace TelCoColorCoder
 {
