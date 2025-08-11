@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include "ColorPairCoder.hpp"
+#include "ContentPrint.hpp"
 
 namespace TelCoColorCoder
 {
