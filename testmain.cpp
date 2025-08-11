@@ -7,7 +7,7 @@ int main() {
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
-    TelCoColorCoder::PrintColorCodeManual();
+    TelCoColorCoder::PrintColorCodeManual(std::function<void(std::string&)> prntline);
 
     return 0;
 }
