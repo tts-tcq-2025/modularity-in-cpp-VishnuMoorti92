@@ -1,4 +1,3 @@
-#include "ColorPairCoder.hpp"
 #include "GetColorPairNumber.hpp"
 
 namespace TelCoColorCoder
