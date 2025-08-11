@@ -3,12 +3,12 @@
 #include <string>
 #include <functional>
 
-int main() {
     std::vector<std::string> messages;
     auto printFunction = &messages {
         messages.push_back(msg);
     };
 
+int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
