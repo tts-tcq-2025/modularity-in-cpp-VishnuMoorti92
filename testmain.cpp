@@ -6,7 +6,7 @@
 #include <iostream>
 
 int main() {
-    std::vector<std::string> messages;
+    std::string messages;
     auto printFunction = &messages {
         messages.push_back(msg);
     };
