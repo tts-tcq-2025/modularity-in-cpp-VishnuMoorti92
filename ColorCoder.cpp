@@ -1,6 +1,3 @@
-#include <iostream>
-#include <string>
-#include <cassert>
 #include "ColorCoder.hpp"
 
 namespace TelCoColorCoder
