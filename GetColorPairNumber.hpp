@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
-#include "ColorCoder.hpp"
+#include "ColorPairCoder.hpp"
 
 namespace TelCoColorCoder
 {
