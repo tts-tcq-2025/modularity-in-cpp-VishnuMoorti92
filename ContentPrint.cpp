@@ -1,5 +1,5 @@
 #include "ContentPrint.hpp"
 
-void printAlertMessage(std::string& lineContent) {
+void printContent(std::string& lineContent) {
     std::cout << lineContent;
 }
